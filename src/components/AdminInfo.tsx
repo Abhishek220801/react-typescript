@@ -1,19 +1,19 @@
-import type { AdminInfoList } from "../types"
+import type { Info } from "./UserInfo"
 
-type AdminInfoProps = {
-    admin: AdminInfoList
+type AdminInfoList = Info & {
+  admin: string
 }
 
-const AdminInfo: React.FC<AdminInfoProps> = ({admin}) => {
+const AdminInfo = ({username, email, age, location, admin}: AdminInfoList) => {
   return (
-    <div>
-      <h2>Admin Information</h2>
-      <p>ID: {admin.id}</p>
-      <p>Name: {admin.name}</p>
-      <p>Email: {admin.email}</p>
-      <p>Role: {admin.role}</p>
-      <p>Last Login: {admin.lastLogin.toLocaleString()}</p>
-    </div>
+    <ul>
+      <li>{username}</li>
+      <li>{email}</li>
+      <li>{age}</li>
+      <li>{email}</li>
+      <li>{JSON.stringify(location)}</li>
+      <li>Admin: {admin.toString()}</li>
+    </ul>
   )
 }
 
