@@ -33,6 +33,7 @@ const MyComponent = () => {
   }, [])
   return (
     <div>
+      {JSON.stringify(data)}
       {data ? (<div>
         <p>ID: {data.id}</p>
         <p>Title: {data.title}</p>

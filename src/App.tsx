@@ -22,7 +22,9 @@ function App() {
       {/* <Counter/> */}
       {/* <CounterReducer/> */}
       {/* <CounterWReducer/> */}
-      <MyComponent/>
+      {/* <MyComponent/> */}
+      {/* <ContactForm/> */}
+      <Todo/>
     </div>
   )
 }
