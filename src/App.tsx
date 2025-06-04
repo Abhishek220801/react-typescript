@@ -1,6 +1,9 @@
 import './App.css'
+import CounterWReducer from './components/CounterWReducer'
+import MyComponent from './components/MyComponent'
 import ContactForm from './ContactForm'
 import Counter from './Counter'
+import CounterReducer from './CounterReducer'
 import EventHandling from './EventHandling'
 import FocusInput from './FocusInput'
 import { MyContext } from './MyContext'
@@ -16,7 +19,10 @@ function App() {
       {/* <FocusInput/> */}
       {/* <ContactForm/> */}
       {/* <EventHandling/> */}
-      <Counter/>
+      {/* <Counter/> */}
+      {/* <CounterReducer/> */}
+      {/* <CounterWReducer/> */}
+      <MyComponent/>
     </div>
   )
 }
